@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+
+* *::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0 auto;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-style: none;
+}
+
+.list {
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* -----header------- */
+
+.header_logo {
+    width: 150px;
+    height: 40px;
+}
+
+/*----------------------------- main-------------------- */
+
+.img_log {
+    width: 45%;
+    min-width: 300px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.section_img {
+    height: auto;
+    width: 100%;
+    min-height: 550px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8),
+            rgba(235, 240, 240, 0.5)),
+        url(../imd/pole.jpg) 50% 70% no-repeat;
+
+}
