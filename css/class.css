@@ -59,6 +59,10 @@ img {
     height: 40px;
 }
 
+.list_a {
+    text-decoration: none;
+}
+
 /*----------------------------- main-------------------- */
 
 .img_log {
