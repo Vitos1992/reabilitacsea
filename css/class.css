@@ -81,3 +81,8 @@ img {
         url(../imd/pole.jpg) 50% 70% no-repeat;
 
 }
+
+.modal {
+    width: 308px;
+    height: 279px;
+}
