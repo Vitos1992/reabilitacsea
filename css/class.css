@@ -123,8 +123,8 @@ img {
 
 .modal {
     width: 408px;
-    height: 320px;
-    background-color: antiquewhite;
+    height: 360px;
+    background-color: rgba(255, 250, 205, 0.5);
     border-radius: 3px;
     padding: 12px;
     margin-top: 60px;
@@ -186,6 +186,7 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
     padding-left: 38px;
+    
 
 }
 
