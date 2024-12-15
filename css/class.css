@@ -226,6 +226,31 @@ img {
 
 .footer {
     background-color: #606161;
+    padding: 100px 0 100px 0;
+}
+
+.blok_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foter_wrap {
+    display: inline-block;
+    width: auto;
+}
+
+.logo_footer {
+    fill: #ffffff;
+}
+
+.footer_socsial {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: #ffffff;
 }
 
 .social_list {
