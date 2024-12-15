@@ -52,10 +52,27 @@ img {
     padding: 0 10px;
 }
 
-/* -----header------- */
+/* ------------------------------header------- */
 
 .page_header {
+    background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+.page_header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+
 }
 
 .sait_address {
@@ -77,9 +94,29 @@ img {
     position: relative;
 }
 
+.li_nav:nth-child(1) {
+    margin-left: 0;
+}
+
+.underline {
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    position: absolute;
+    background-color: #2E2F42;
+    border-radius: 4px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+
 .header_logo {
-    width: 210px;
-    height: 60px;
+    width: 150px;
+    height: 80px;
     padding: 10px 0 10px 0;
 }
 
@@ -94,6 +131,7 @@ img {
     padding: 24px 0 27px 0;
 }
 
+
 /*----------------------------- main-------------------- */
 
 .main_wrap {
@@ -104,14 +142,26 @@ img {
     
 }
 
+.title_team {
+    color: #606161;
+    font-size: 32px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
 .img_log {
-    width: 45%;
     min-width: 300px;
     overflow: hidden;
     padding: 20px;
 }
 
 .section_img {
+    margin-top: 100px;
     height: auto;
     width: 100%;
     min-height: 550px;
@@ -163,7 +213,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: #606161;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .label_phone {
@@ -173,12 +223,12 @@ img {
     line-height: 1.2;
     letter-spacing: 0.04em;
     color: #606161;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     
 }
 
 .input_name {
-    width: 100%;
+    width: 90%;
     height: 35px;
     border: 2px solid rgba(46 ,47, 66, 0.4);
     border-radius: 4px;
@@ -191,7 +241,7 @@ img {
 }
 
 .inpyt_phone {
-    width: 100%;
+    width: 90%;
     height: 35px;
     border: 2px solid rgba(46 ,47, 66, 0.4);
     border-radius: 4px;
@@ -235,18 +285,34 @@ img {
     justify-content: space-between;
 }
 
+.logo_rst {
+    margin-bottom: 16px;
+    width: auto;
+}
+
 .foter_wrap {
     display: inline-block;
     width: auto;
 }
 
 .logo_footer {
+    width: 200px;
+    height: 60px;
     fill: #ffffff;
+}
+
+.text_footer {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+
 }
 
 .footer_socsial {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
