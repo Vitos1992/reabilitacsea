@@ -94,6 +94,12 @@ img {
     position: relative;
 }
 
+.li_nav:hover,
+.li_nav:focus {
+    background-color: #606161;
+
+}
+
 .li_nav:nth-child(1) {
     margin-left: 0;
 }
@@ -152,6 +158,20 @@ img {
     text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+.text_about_us {
+    width: 520px;
+}
+
+.text_about {
+    width: 100%;
+    color: #606161;
+    font-size: 18px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: justify;
 }
 
 .img_log {
@@ -268,8 +288,19 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-left: auto;
     margin-right: auto;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 40px;
+}
+
+.btn_form:hover,
+.btn_form:focus {
+    background-color: #606161;
+    color: #ffffff;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
 }
 
 /* -----------------------------footer-------------------- */
@@ -331,6 +362,14 @@ img {
     width: 40px;
     height: 40px;
 }
+
+.wb_soc_li:hover,
+.wb_soc_li:focus {
+    background-color: #606161;
+    fill: #ffffff;
+}
+
+
 
 .web_soc {
     display: flex;
