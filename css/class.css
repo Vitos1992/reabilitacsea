@@ -1,6 +1,86 @@
 html {
     box-sizing: border-box;
+
 }
+
+/*--------------------- PAY-------------------- */
+
+html #f .f-card-icon,
+body #f .f-card-icon {
+    opacity: 0.5;
+}
+
+html #f .checkbox label,
+body #f .checkbox label,
+html #f .radio label,
+body #f .radio label,
+html #f label,
+body #f label {
+    font-size: 12px;
+}
+
+html #f .has-danger .form-control,
+body #f .has-danger .form-control,
+html #f .has-danger .custom-file-control,
+body #f .has-danger .custom-file-control {
+    color: #f00;
+    background-image: linear-gradient(to top, #f44336 2px, rgba(244, 67, 54, 0) 2px), linear-gradient(to top, #f00 1px, transparent 1px);
+}
+
+html #f .f-icon,
+body #f .f-icon {
+    background-size: 80%;
+}
+
+html #f .f-block-hr,
+body #f .f-block-hr {
+    border-bottom: none;
+}
+
+html #f .f-btn-block,
+body #f .f-btn-block {
+    background-color: #3d3d3d;
+    color: #fff;
+    border-radius: 0;
+    transition: background-color 1s ease-out, color 1s ease-in;
+}
+
+html #f .f-btn-block:hover,
+body #f .f-btn-block:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+html #f .f-center,
+body #f .f-center {
+    float: inherit;
+    margin: auto;
+    border-right: none;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 380px;
+}
+
+html #f .f-info,
+body #f .f-info,
+html #f .f-header,
+body #f .f-header {
+    display: none;
+}
+
+html #f .f-dropdown-menu,
+body #f .f-dropdown-menu {
+    min-width: 180px;
+}
+
+html #f .f-wrapper,
+body #f .f-wrapper {
+    border: none;
+    box-shadow: none;
+}
+
+
+/* -------------------------- */
 
 * *::before,
 ::after {
@@ -15,6 +95,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     background: rgb(255, 255, 255);
+    overflow-y: scroll;
 }
 
 p,
@@ -145,7 +226,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0px auto;
-    
+
 }
 
 .title_team {
@@ -157,17 +238,17 @@ img {
     font-weight: 700;
     text-transform: capitalize;
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 72px;
 }
 
 .text_about_us {
-    width: 520px;
+    width: 620px;
 }
 
 .text_about {
     width: 100%;
     color: #606161;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 700;
     letter-spacing: 0.03em;
@@ -244,26 +325,26 @@ img {
     letter-spacing: 0.04em;
     color: #606161;
     margin-bottom: 8px;
-    
+
 }
 
 .input_name {
     width: 90%;
     height: 35px;
-    border: 2px solid rgba(46 ,47, 66, 0.4);
+    border: 2px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0;
     padding-left: 38px;
-    
+
 
 }
 
 .inpyt_phone {
     width: 90%;
     height: 35px;
-    border: 2px solid rgba(46 ,47, 66, 0.4);
+    border: 2px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -296,6 +377,60 @@ img {
 .btn_form:focus {
     background-color: #606161;
     color: #ffffff;
+}
+
+.checkout_container {}
+
+
+.address_item {
+    padding: 120px 0 120px 0;
+    background-color: #f4f4fd;
+    ;
+}
+
+.wrap_add_map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address_us {
+    display: block;
+}
+
+.sail_address {
+    display: flex;
+    flex-direction: column;
+}
+
+.li_address {
+    display: block;
+    position: relative;
+}
+
+.svg_address {
+    fill: red;
+
+}
+
+.li_contact {
+    font-size: 52px;
+    text-decoration: none;
+    color: #606161;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: initial;
+    margin-bottom: 18px;
+    transition: color 250ms linear;
+}
+
+.li_contact:hover,
+.li_contact:focus {
+    color: #ffffff;
+    background-color: #606161;
+    border-radius: 4px;
+    border: solid 2px;
 }
 
 .maps {
