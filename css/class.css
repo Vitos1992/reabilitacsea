@@ -301,12 +301,18 @@ img {
 }
 
 .form_icon {
+    fill: #f00;
     position: absolute;
     left: 16px;
     fill: #2E2F42;
     top: 50%;
     transform: translateY(-50%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form_icon:hover,
+.form_icon:focus {
+    fill: blue;
 }
 
 .form_title {
@@ -355,6 +361,20 @@ img {
 
 }
 
+.input_name:hover,
+.inpyt_phone:hover,
+.input_name:focus, 
+.inpyt_phone:focus {
+    border: 1px solid blue;
+}
+
+.input_name:hover+.form_icon,
+.inpyt_phone:hover+.form_icon,
+.input_name:focus+.form_icon, 
+.inpyt_phone:focus+.form_icon {
+    fill:  blue;
+}
+
 .inpyt_phone {
     width: 90%;
     height: 35px;
@@ -393,6 +413,33 @@ img {
     color: #ffffff;
 }
 
+.btn_app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    color: #606161;
+    background-color: PaleGoldenrod;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 60px;
+}
+
+.btn_app:hover,
+.btn_app:focus {
+    color: #e7e9fc;
+    background-color: #606161;
+}
 
 .address_item {
     padding: 120px 0 120px 0;
@@ -421,7 +468,7 @@ img {
 }
 
 .svg_address {
-    fill: red;
+    fill: #31D0AA;
 
 }
 
@@ -510,10 +557,10 @@ img {
     height: 40px;
 }
 
-.wb_soc_li:hover,
-.wb_soc_li:focus {
-    background-color: #606161;
-    fill: #ffffff;
+.web_soc:hover,
+.web_soc:focus {
+    background-color: #31D0AA;
+    fill: #fff;
 }
 
 
